@@ -6,7 +6,7 @@ race_count = df['race'].value_counts()
 print(race_count)
 
 average_age_men = df[df['sex'] == 'Male']['age'].mean()
-print(f"\nThe average age of men is {average_age_men:}")
+print(f"\nThe average age of men is {average_age_men:.0f}")
 
 total = df['education'].count()
 bachelors_count = df[df['education'] == 'Bachelors']['education'].count()
